@@ -9,9 +9,13 @@ void setup() {
 
 void loop() {
   if (digitalRead(2) == LOW) {
+    aktuelle_pause = 100;
   } else if (digitalRead(4) == LOW) {
+    aktuelle_pause = 200;
   } else if (digitalRead(6) == LOW) {
+    aktuelle_pause = 400;
   } else {
+    aktuelle_pause = 2000;
   }
 
   digitalWrite(13, HIGH);
